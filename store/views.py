@@ -133,3 +133,9 @@ def confirm(request):
 def thankyou(request):
 	context={}
 	return render(request, 'store/thank_you.html', context)
+
+def online(request):
+	context={}
+	return render(request, 'store/online.html', context)
+
+

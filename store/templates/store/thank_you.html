@@ -1,7 +1,8 @@
 {% extends 'registration/base.html' %}
 {% block content %}
 <h1>Thank You!</h1><br><br>
-<p>Your order has been Successfully placed!</p>     
+<p>Your order has been Successfully placed!</p> 
+<a href="{% url 'store' %} " class="btn btn-warning">Press to Continue to Homepage</a>    
 {% endblock %}
 
 
