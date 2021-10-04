@@ -7,6 +7,24 @@ from django.shortcuts import  render, redirect
 from .forms import NewUserForm, CustomerForm
 from django.contrib.auth import login
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import user_passes_test
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from django.conf import settings
+from .forms import *
+from .models import *
+
+
+from django.contrib.auth.models import User, auth
+from random import randint
+from uuid import uuid4
+
+from django.http import HttpResponse
+
+import pdfkit
+from django.template.loader import get_template
+import os
 
 def store(request):
 
@@ -137,5 +155,7 @@ def thankyou(request):
 def online(request):
 	context={}
 	return render(request, 'store/online.html', context)
+
+
 
 

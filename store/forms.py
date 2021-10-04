@@ -24,3 +24,4 @@ class CustomerForm(forms.ModelForm):
     class Meta:
         model = Customer
         fields = ["user", "name", "email"]
+
