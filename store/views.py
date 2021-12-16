@@ -22,7 +22,7 @@ from uuid import uuid4
 
 from django.http import HttpResponse
 
-import pdfkit
+
 from django.template.loader import get_template
 import os
 
